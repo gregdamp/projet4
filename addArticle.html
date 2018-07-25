@@ -2,9 +2,21 @@
 <html>
 <head>
   <script src="https://cloud.tinymce.com/stable/tinymce.min.js?4mc0zs5grn8qykj3fy6io14ytn0vc568i79rnd76dwteiahd"></script>
-  <script>tinymce.init({ selector:'textarea' });</script>
+  <script>tinymce.init({ selector:'textarea' });</script><br>
 </head>
 <body>
-  <textarea></textarea>
+	<form method="post" action="insertArticle.php">
+		<label for="title">Titre:</label> <input type="text" name="articleTitle" id="title"><br>
+  		<textarea></textarea><br>
+  		<label for="tag">mots-clés:</label> <input type="text" name="articleTag" id="tag">
+  		<label>catégorie:</label> <select name="category" size="1">
+			<option>catégorie 1
+			<option>catégorie 2
+			<option>catégorie 3
+			<option>catégorie 4
+			<option>catégorie 5
+		</select>
+		<input type="submit" name="sendButton" style="float: right;">
+  	</form>
 </body>
 </html>
